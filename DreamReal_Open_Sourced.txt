@@ -371,12 +371,6 @@ local skyTable = {
 
 
 
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
--- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs-- funcs
 local function sendNotify(Duration, Title, Content, SubContent)
     Fluent:Notify(
         {
@@ -765,8 +759,8 @@ repeat task.wait(1) until _canShow == true
 
 local Window = Fluent:CreateWindow(
     {
-        Title = "Infernium ",
-        SubTitle = "Combat Warriors 1.3",
+        Title = "Dark-Pulse ",
+        SubTitle = "Combat Warriors",
         TabWidth = 136,
         Size = UDim2.fromOffset(550, 425),
         Acrylic = true,
@@ -939,28 +933,24 @@ end
 Window:SelectTab(1)
 Fluent:Notify(
     {
-        Title = "Infernium",
+        Title = "Dark-Pulse",
         Content = "Thank u for using our script!",
-        SubContent = "voltrivax",
         Duration = 8
     }
 )
 Tab.Credits:AddParagraph(
     {
-        Title = "Infernium Credits",
+        Title = "Dark-Pulse Credits",
         Content = "voltrivax"
     }
 )
 
 Tab.Credits:AddButton(
     {
-        Title = "Discord",
+        Title = "Credits",
         Description = "Click to copy",
         Callback = function()
-            setclipboard("https://discord.gg/inferniumhub")
-            toclipboard("https://discord.gg/inferniumhub")
-
-            sendNotify(5, "Notification", "Discord Link Was Copied To Your Clipboard: https://discord.gg/inferniumhub")
+            setclipboard("Scripter - dark_769.")
         end
     }
 )
